@@ -1,15 +1,27 @@
-##Introduction
-- A program using AES and RSA to encrypt and decrypt file.
+# **File Encryption Tool**  
+*A file encryption/decryption program using AES and RSA algorithms*
 
-##Environment
-- Ubuntu 24.04
+---
 
-##Build
-- cd build
-- cmake ..
+## **1. Introduction**  
+This tool provides file encryption and decryption using:  
+- **AES-128** (for symmetric encryption)  
+- **RSA-2048** (for asymmetric key exchange)  
+---
 
-##Usage
-- ./build/main [inputfile] -o [outputfile]
+## **2. Environment**  
+### **Requirements**  
+- **OS**: Ubuntu 24.04 LTS (or compatible Linux distribution)  
+- **Dependencies**:  
+  ```bash
+    # Install all dependencies on Ubuntu
+    sudo apt update && sudo apt install -y \
+    build-essential \
+    cmake \
+    libssl-dev \
+    libgmp-dev  
 
-##Author
-- 2022152003 ZhangShijie
+## **3.Build**
+```bash
+    mkdir -p build && cd build && cmake ..  && make
+```
